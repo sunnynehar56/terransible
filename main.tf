@@ -294,12 +294,13 @@ resource "aws_security_group" "wp_public_sg" {
   vpc_id      = "${aws_vpc.wp_vpc.id}"
 
   #HTTP 
-
+  # cidr_blocks = ["${var.localip}"] need to be checked
   ingress {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
+   #cidr_blocks = ["${var.localip}"] need to be checked
   }
 
   #Outbound internet access

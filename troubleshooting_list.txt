@@ -1,0 +1,8 @@
+1. check terrafrom --version , if you dont see export PATH=$PATH:/(where ever it is installed)
+2. check aws --version
+3. check ansible --version
+4. check ansible -i aws_hosts -u ec2-user -m ping dev
+5. ssh-add-l / ssh-agent bash / ssh-add ~/.ssh/kryptonite(which ever you have given)
+6. check /etc/ansible/ansible.cfg 
+      and uncomment host_key_checking = False
+7. check once again with terraform plan
