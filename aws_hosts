@@ -1,5 +1,6 @@
-[dev] 
-34.239.130.247 
-[dev:vars] 
-s3code=sunmaris_104
-domain=sunmaris
+# this details will be filled by main.tf 
+#[dev] 
+#34.239.130.247 
+#[dev:vars] 
+#s3code=sunmaris_104
+#domain=sunmaris
